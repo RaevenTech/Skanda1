@@ -73,15 +73,6 @@
         return false;
     });
 
-    // Copyright year update
-    document.addEventListener('DOMContentLoaded', function() {
-      var currentYear = new Date().getFullYear();
-      var copyrightElement = document.querySelector('.footer-copyright');
-      if (copyrightElement) {
-          copyrightElement.innerHTML = '&copy; ' + currentYear + ' <a class="text-white border-bottom" href="#">SKandA</a>. All Rights Reserved. Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a>';
-      }
-  });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -132,4 +123,16 @@
     });
     
 })(jQuery);
+
+
+// Custom JavaScript 
+
+// Copyright year update
+document.addEventListener('DOMContentLoaded', function() {
+  var currentYear = new Date().getFullYear();
+  var copyrightElement = document.querySelector('.footer-copyright');
+  if (copyrightElement) {
+      copyrightElement.innerHTML = '&copy; ' + currentYear + ' <a class="text-white border-bottom" href="#">SKandA</a>. All Rights Reserved. Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a>';
+  }
+});
 

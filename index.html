@@ -360,6 +360,9 @@
                         <h3 class="text-white mb-2 mt-3">For More Details</h3>
                         <p class="text-white mb-3"> We offer you a genuine interest in doing things right and in doing our best to deliver what you need.</p>
                         <h2 class="text-white mb-2 ">+27 11 482 7538</h2>
+                        <a href="other-services" alt="">
+                          <p class="text-primary bg-light border-none px-3 py-2" style="border-radius: 2px;"> Other Services</p>
+                        </a>  
                     </div>
                 </div>
             </div>
@@ -369,7 +372,7 @@
 
 
     <!-- Other Services start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div id="other-services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
           <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
               <h5 class="fw-bold text-primary text-uppercase">Other Services</h5>
@@ -483,7 +486,8 @@
                                   <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
                               </div>
                               <div class="col-12">
-                                  <button class="btn btn-dark w-100 py-3" type="submit">Contact Us</button>
+                                <button class="btn btn-dark w-100 py-3" type="button" onclick="submitForm()">Contact Us</button>
+                                <!-- Add your form submission logic, e.g., sending data to a server in JS file -->
                               </div>
                           </div>
                       </form>
@@ -511,6 +515,7 @@
                         <div class="text-center py-4">
                             <h4 class="text-primary">Full Name</h4>
                             <p class="text-uppercase m-0">Designation</p>
+                            <a><small class="text-primary fw-500">My Bio</small></a>
                         </div>
                     </div>
                 </div>
@@ -522,6 +527,7 @@
                         <div class="text-center py-4">
                             <h4 class="text-primary">Full Name</h4>
                             <p class="text-uppercase m-0">Designation</p>
+                            <a><small class="text-primary fw-500">My Bio</small></a>
                         </div>
                     </div>
                 </div>
@@ -533,6 +539,7 @@
                         <div class="text-center py-4">
                             <h4 class="text-primary">Full Name</h4>
                             <p class="text-uppercase m-0">Designation</p>
+                            <a><small class="text-primary fw-500">My Bio</small></a>
                         </div>
                     </div>
                 </div>
@@ -654,11 +661,21 @@
                           <small class="text-uppercase">Blog For Medium Sized Businesses</small>
                       </div>
                       <div class="p-5 pt-0">
-                          <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary pt-1"></i></div>
-                          <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary pt-1"></i></div>
-                          <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary pt-1"></i></div>
-                          <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary pt-1"></i></div>
-                          <a href="" class="btn btn-primary py-2 px-4 mt-4">Read more</a>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Blog Title</span>
+                          <i class="fa fa-check text-primary pt-1"></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Blog Title</span><i class="fa fa-check text-primary pt-1"></i>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                          <span>Blog Title</span><i class="fa fa-check text-primary pt-1"></i>
+                        </div>
+                          <div class="d-flex justify-content-between mb-2">
+                            <a href="blog.html"><span class="blog-article-title" style="color: #626f7d;" >Blog Title</span></a>
+                            <i class="fa fa-check text-primary pt-1"></i>
+                          </div>
+                          <a href="blog.html" class="btn btn-primary py-2 px-4 mt-4">Read more</a>
                       </div>
                   </div>
               </div>
@@ -699,8 +716,8 @@
                         </p>
                         <form action="submit">
                             <div class="input-group">
-                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                                <button class="btn btn-dark">Sign Up</button>
+                                <input id="newsletter" type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark" type="submit">Sign Up</button>
                             </div>
                         </form>
                     </div>
