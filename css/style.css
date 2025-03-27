@@ -506,6 +506,10 @@ textarea {
   resize: none;
 }
 
+p{
+  line-height: 30px;
+}
+
 .more-about-btn{
   color: #06A3DA;
   font-size: small;
