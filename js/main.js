@@ -136,3 +136,48 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+
+    // Function to set a cookie
+    function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    // Function to get a cookie
+    function getCookie(name) {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.indexOf(name + "=") === 0) {
+                return cookie.substring(name.length + 1);
+            }
+        }
+        return "";
+    }
+
+    // Function to check cookie consent
+    function checkCookieConsent() {
+        const consent = getCookie("cookieConsent");
+        if (!consent) {
+            document.getElementById("cookie-banner").style.display = "block";
+        }
+    }
+
+    // Function to accept cookies
+    function acceptCookies() {
+        setCookie("cookieConsent", "accepted", 365);
+        document.getElementById("cookie-banner").style.display = "none";
+    }
+
+    // Function to decline cookies
+    function declineCookies() {
+        setCookie("cookieConsent", "declined", 365);
+        document.getElementById("cookie-banner").style.display = "none";
+    }
+
+    // Check cookie consent on page load
+    window.onload = checkCookieConsent;
+
+
