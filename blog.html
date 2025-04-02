@@ -32,6 +32,7 @@
 </head>
 
 <body>
+    <header>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner"></div>
@@ -40,6 +41,7 @@
 
 
     <!-- Topbar Start -->
+    
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
@@ -60,6 +62,7 @@
             </div>
         </div>
     </div>
+    </header>
     <!-- Topbar End -->
 
 
@@ -81,41 +84,22 @@
                 </div>
             </div>
         </nav>
+        <!-- Navbar End -->
 
         <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
             <div class="row py-5">
                 <div class="col-12 pt-lg-5 mt-lg-5 text-center">
                     <h1 class="display-4 text-white animated zoomIn">Joe's Blogs</h1>
-                    <a href="techtube" class="h5 text-white">TechTube</a>
+                    <a href="#techtube" class="h5 text-white">TechTube</a>
                     <i class="far fa-circle text-white px-2"></i>
-                    <a href="blogs" class="h5 text-primary">Blog Posts</a>
+                    <a href="#blogs" class="h5 text-primary">Blog Posts</a>
                     <i class="far fa-circle text-white px-2"></i>
-                    <a href="techtalks" class="h5 text-white">TechTalk</a>
+                    <a href="#techtalks" class="h5 text-white">TechTalk</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Navbar End -->
-
-
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Full Screen Search End -->
-
+    
 
     <!-- Blog Start -->
     <div id="blogs" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -124,11 +108,11 @@
                 <!-- Blog list Start -->
                 <div class="col-lg-8">
                     <div class="row g-5">
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                        <div id="software" class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
                             <div class="blog-item bg-light rounded overflow-hidden">
                                 <div class="blog-img position-relative overflow-hidden">
-                                    <img class="img-fluid" src="img/blog-1.jpg" alt="">
-                                    <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Software</a>
+                                    <img  class="img-fluid" src="img/blog-1.jpg" alt="">
+                                    <a  class="position-absolute bottom-0 start-0 bg-primary text-white rounded-end mb-5 py-2 px-4" href="">Software</a>
                                 </div>
                                 <div class="p-4">
                                     <div class="d-flex mb-3">
@@ -141,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
+                        <div id="ai" class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
                             <div class="blog-item bg-light rounded overflow-hidden">
                                 <div class="blog-img position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/blog-2.jpg" alt="">
@@ -158,7 +142,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                        <div id="consulting" class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
                             <div class="blog-item bg-light rounded overflow-hidden">
                                 <div class="blog-img position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/blog-3.jpg" alt="">
@@ -175,7 +159,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
+                        <div id="marketing" class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
                             <div class="blog-item bg-light rounded overflow-hidden">
                                 <div class="blog-img position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/blog-1.jpg" alt="">
@@ -192,7 +176,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                        <div id="future-tech" class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
                             <div class="blog-item bg-light rounded overflow-hidden">
                                 <div class="blog-img position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/blog-2.jpg" alt="">
@@ -209,7 +193,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
+                        <div id="events" class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
                             <div class="blog-item bg-light rounded overflow-hidden">
                                 <div class="blog-img position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/blog-1.jpg" alt="">
@@ -226,7 +210,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
+                        <div id="security" class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
                             <div class="blog-item bg-light rounded overflow-hidden">
                                 <div class="blog-img position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/blog-2.jpg" alt="">
@@ -243,7 +227,7 @@
                                 </div>
                             </div>
                           </div>
-                          <div class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
+                          <div id="wellness" class="col-md-6 wow slideInUp" data-wow-delay="0.6s">
                             <div class="blog-item bg-light rounded overflow-hidden">
                                 <div class="blog-img position-relative overflow-hidden">
                                     <img class="img-fluid" src="img/blog-3.jpg" alt="">
@@ -265,22 +249,21 @@
                 <!-- Blog list End -->
     
                 <!-- Sidebar Start -->
-                <div class="col-lg-4">
-    
+                <aside class="col-lg-4">
                     <!-- Category Start -->
                     <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
                         <div class="section-title section-title-sm position-relative pb-3 mb-4">
                             <h3 class="mb-0">Categories</h3>
                         </div>
                         <div class="link-animated d-flex flex-column justify-content-start">
-                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Future Software</a>
-                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>AI Development</a>
-                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Consulting</a>
-                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Marketing</a>
-                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Future Tech</a>
-                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Personal Wellness</a>
-                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Events</a>
-                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Security</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#software"><i class="bi bi-arrow-right me-2"></i>New Software</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#ai"><i class="bi bi-arrow-right me-2"></i>AI Development</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#consulting"><i class="bi bi-arrow-right me-2"></i>Consulting</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#marketing"><i class="bi bi-arrow-right me-2"></i>Marketing</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#future-tech"><i class="bi bi-arrow-right me-2"></i>Future Tech</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#wellness"><i class="bi bi-arrow-right me-2"></i>Personal Wellness</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#events"><i class="bi bi-arrow-right me-2"></i>Events</a>
+                            <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#security"><i class="bi bi-arrow-right me-2"></i>Security</a>
                         </div>
                     </div>
                     <!-- Category End -->
@@ -361,7 +344,7 @@
                         </div>
                     </div>
                     <!-- Tags End -->
-                </div>
+                  </aside>
                 <!-- Sidebar End -->
             </div>
         </div>
