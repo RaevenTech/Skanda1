@@ -461,6 +461,7 @@ h6,
 .team-item:hover .team-img img,
 .blog-item:hover .blog-img img {
     transform: scale(1.15);
+    opacity: 90%;
 }
 
 
@@ -543,5 +544,9 @@ p{
 
 .skanda-logo-txt{
   margin-left: .15em;
+}
+
+.blog-image{
+  opacity: 60%;
 }
 
