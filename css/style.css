@@ -550,3 +550,20 @@ p{
   opacity: 60%;
 }
 
+
+.topbar-btn{
+  background: none;
+  border: none;
+  color: gray;
+}
+
+.topbar-btn:hover{
+  color: slategrey;
+
+}
+#topbar-socials{
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 7;
+}
