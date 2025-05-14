@@ -184,17 +184,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check cookie consent on page load
     window.onload = checkCookieConsent;
 
+    let topbarSeeSocials = document.getElementById("topbar-socials")
+    window.onload = topbarSeeSocials.style.display === "none"
+
     function toggleTopbarSocials() { 
-      let topbarSeeSocials = document.getElementById("topbar-socials")
-      if (topbarSeeSocials.style.display === "none"){
-        topbarSeeSocials.style.display = "block"
-      } else {
+      if (topbarSeeSocials.style.display === "block"){
         topbarSeeSocials.style.display = "none"
-      }
-      let topbarBtnSeeSocials = document.getElementById("topbar-see-socials")
-      if (topbarBtnSeeSocials.style.display ==="none"){
-        topbarBtnSeeSocials.style.display === "none"
       } else {
-        topbarBtnSeeSocials.style.display = "block"
+        topbarSeeSocials.style.display = "block"
       }
+      console.log("socials")
+    }
+
+    function toggleTopbarText() {
+      let topbarTxt = document.getElementById("topbar-see-socials")
+      topbarTxt.remove()
+      console.log(topbarTxt)
+    }
+
+    function topbarSocialsTxtBtn(){
+      toggleTopbarSocials()
+      toggleTopbarText()
+      console.log("topbar function")
     }

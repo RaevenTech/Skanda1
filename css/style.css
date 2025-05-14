@@ -561,9 +561,9 @@ p{
   color: slategrey;
 
 }
-#topbar-socials{
+#topbar-see-socials{
   position: relative;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 7;
 }
