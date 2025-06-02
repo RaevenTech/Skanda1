@@ -567,3 +567,11 @@ p{
   left: 0;
   z-index: 7;
 }
+
+
+.main-page-blog:hover{
+  background: #99c1fb;
+  color: #06A3DA;
+  cursor: pointer;
+  border-radius: 4px;
+}
